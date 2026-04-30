@@ -1,0 +1,10 @@
+#!/bin/sh
+# CC0 1.0 Universal
+# This file is dedicated to the public domain.
+# You may use, modify, and distribute it without restriction.
+
+# Ejecutar postinstall de XIX
+if [ -f /preinstalled/scripts/postinstall.sh ]; then
+    chmod +x /preinstalled/scripts/postinstall.sh
+    /preinstalled/scripts/postinstall.sh
+fi

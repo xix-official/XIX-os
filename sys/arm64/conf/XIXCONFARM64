@@ -1,0 +1,141 @@
+# MIT License
+# 
+# Copyright (c) 2026 XIX
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# My GitLab: https://gitlab.com/XIX_Official/xix
+
+include GENERIC
+
+ident   XIX_ARM64
+
+nooptions       COMPAT_FREEBSD4
+nooptions       COMPAT_FREEBSD5
+nooptions       COMPAT_FREEBSD6
+nooptions       COMPAT_FREEBSD7
+nooptions       COMPAT_FREEBSD10
+nooptions       COMPAT_FREEBSD11
+nooptions       COMPAT_FREEBSD12
+
+nooptions       INVARIANTS
+nooptions       INVARIANT_SUPPORT
+nooptions       WITNESS
+nooptions       WITNESS_SKIPSPIN
+nooptions       DEBUG
+
+options         SCHED_ULE
+options         PREEMPTION
+
+options         MAC
+options         MAC_BSDEXTENDED
+options         AUDIT
+options         RACCT
+options         RCTL
+
+device          vt
+device          vt_efifb
+
+device          drm
+device          drm2
+device          simpledrm
+
+options         COMPAT_LINUXKPI
+options         COMPAT_LINUXKPI_GPLv2
+
+device          nvme
+device          ahci
+device          mmc
+device          mmcsd
+device          sdhci
+device          sdhci_acpi
+device          sdhci_fdt
+
+options         TMPFS
+options         FUSEFS
+options         UFS_ACL
+options         UFS_DIRHASH
+
+device          aw_spi
+device          dwc
+device          dwc_rk
+device          dwc_socfpga
+device          dwc_fdt
+
+device          aw_gpio
+device          bcm_gpio
+device          rk_gpio
+device          ti_gpio
+
+device          aw_i2c
+device          rk_i2c
+device          ti_i2c
+
+device          aw_thermal
+device          rk_thermal
+
+device          usb
+device          xhci
+device          ehci
+device          ohci
+device          dwcotg
+device          uhid
+device          ukbd
+device          ums
+
+device          sound
+device          snd_hda
+device          simple_audio
+
+device          aw_nic
+device          dwc_rk_eth
+device          cpsw
+device          smscphy
+device          mdio
+device          miibus
+device          wlan
+device          wlan_amrr
+device          wlan_ccmp
+device          wlan_tkip
+device          wlan_wep
+
+nodevice        firewire
+nodevice        sbp
+nodevice        fwip
+
+nodevice        cs
+nodevice        sn
+nodevice        xe
+nodevice        ed
+nodevice        ep
+nodevice        fe
+nodevice        ie
+nodevice        le
+nodevice        lnc
+nodevice        vx
+nodevice        wb
+nodevice        xl
+nodevice        ti
+nodevice        tx
+nodevice        vr
+nodevice        sis
+nodevice        sf
+nodevice        ste
+nodevice        tl
+nodevice        txp

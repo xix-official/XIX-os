@@ -1,0 +1,86 @@
+#Copyright (c) 2026 XIX
+
+#Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated #documentation files (the “Software”), to deal in the Software without restriction, including without limitation the #rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to #
+#permit #persons to whom the Software is furnished to do so, subject to the following conditions:
+
+#The above copyright notice and this permission notice shall be included in all copies or substantial portions of the #Software.
+
+#THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE #WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR #COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR #OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.ç
+#My gitlab: https://gitlab.com/XIX_Official
+#Licence: MIT
+
+include GENERIC
+
+ident   XIX
+
+options     MAC
+options     MAC_BSDEXTENDED
+options     MAC_PORTACL
+options     AUDIT
+options     RACCT
+options     RCTL
+
+nooptions   COMPAT_FREEBSD4
+nooptions   COMPAT_FREEBSD5
+nooptions   COMPAT_FREEBSD6
+nooptions   COMPAT_FREEBSD7
+nooptions   COMPAT_FREEBSD10
+nooptions   COMPAT_FREEBSD11
+nooptions   COMPAT_FREEBSD12
+
+nooptions   INVARIANTS
+nooptions   INVARIANT_SUPPORT
+nooptions   WITNESS
+nooptions   WITNESS_SKIPSPIN
+nooptions   DEBUG
+
+nodevice    apm
+nodevice    pmtimer
+nodevice    speaker
+nodevice    mcd
+nodevice    scbus
+nodevice    aic
+nodevice    aha
+nodevice    bt
+nodevice    ncv
+nodevice    nsp
+nodevice    stg
+nodevice    nca
+nodevice    wds
+nodevice    cs
+nodevice    sn
+nodevice    xe
+nodevice    ed
+nodevice    ep
+nodevice    fe
+nodevice    ie
+nodevice    le
+nodevice    lnc
+nodevice    vx
+nodevice    wb
+nodevice    xl
+nodevice    ti
+nodevice    tx
+nodevice    vr
+nodevice    sis
+nodevice    sf
+nodevice    ste
+nodevice    tl
+nodevice    txp
+
+nodevice    firewire
+nodevice    sbp
+nodevice    fwip
+
+nodevice    wlan_wep
+nodevice    wlan_ccmp
+nodevice    wlan_tkip
+
+#nodevice   msdosfs
+#nodevice   ext2fs
+#nodevice   ntfs
+#nodevice   cd9660
+#nodevice   udf
+
+options     SCHED_ULE
+options     PREEMPTION
