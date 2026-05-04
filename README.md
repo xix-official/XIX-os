@@ -26,7 +26,7 @@ cd /usr/src
 sudo make -j4 TARGET=arm64 TARGET_ARCH=aarch64 buildworld
 
 cd /usr/src
-sudo make -j4 TARGET=arm64 TARGET_ARCH=aarch64 buildkernel KERNCONF=XIX
+sudo make -j4 TARGET=arm64 TARGET_ARCH=aarch64 buildkernel KERNCONF=XIXCONFARM64
 
 cd /usr/src
 sudo make TARGET=arm64 TARGET_ARCH=aarch64 release
