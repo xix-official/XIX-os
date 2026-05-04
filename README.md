@@ -37,7 +37,7 @@ cd /usr/src
 sudo make -j4 TARGET=arm TARGET_ARCH=armv7 buildworld
 
 cd /usr/src
-sudo make -j4 TARGET=arm TARGET_ARCH=armv7 buildkernel KERNCONF=XIX
+sudo make -j4 TARGET=arm TARGET_ARCH=armv7 buildkernel KERNCONF=XIXCONFARM
 
 cd /usr/src
 sudo make TARGET=arm TARGET_ARCH=armv7 release
@@ -48,7 +48,7 @@ cd /usr/src
 sudo make -j4 TARGET=riscv TARGET_ARCH=riscv64 buildworld
 
 cd /usr/src
-sudo make -j4 TARGET=riscv TARGET_ARCH=riscv64 buildkernel KERNCONF=XIX
+sudo make -j4 TARGET=riscv TARGET_ARCH=riscv64 buildkernel KERNCONF=XIXCONFRISCV32
 
 cd /usr/src
 sudo make TARGET=riscv TARGET_ARCH=riscv64 release
