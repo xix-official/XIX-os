@@ -53,3 +53,14 @@ sudo make -j4 TARGET=riscv TARGET_ARCH=riscv64 buildkernel KERNCONF=XIXCONFRISCV
 cd /usr/src
 sudo make TARGET=riscv TARGET_ARCH=riscv64 release
 
+This project uses several licenses depending on the origin and authorship of the code:
+
+BSD License — applies to code inherited from the original project and must be preserved in its entirety.
+
+MIT License (see LICENCE-XIX.md) — applies to all new code I create for this project.
+
+CC0 1.0 — applies only to files or modules explicitly marked as public domain.
+
+Each file in the repository indicates its specific license in its header.
+
+See LICENCE-XIX.md for the terms applied to new code under the MIT license.
